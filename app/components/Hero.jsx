@@ -1,4 +1,5 @@
 import Image from "next/image";
+import DottedButton from "./DottedButton";
 const Hero = ({ FlexDirection, TitleOne, TitleTwo, Description }) => {
   return (
     <section className="px-8 ">
@@ -16,12 +17,8 @@ const Hero = ({ FlexDirection, TitleOne, TitleTwo, Description }) => {
           </h1>
           <p className="text-xl font-light lg:text-3xl ">{Description}</p>
           <div className="flex items-center gap-4 mt-6 ">
-            <button className="lg:px-10 px-6 py-1 lg:py-4 text-center white-btn bg-[#0C356A] text-white  font-extrabold hover:shadow-2xl">
-              Explore Products
-            </button>
-            <button className="lg:px-10 px-6 py-1 lg:py-4 text-center white-btn bg-[#0C356A] text-white  font-extrabold hover:shadow-2xl">
-              Explore Products
-            </button>
+            <DottedButton buttonText="explore more " />
+            <DottedButton buttonText="explore more " />
           </div>
         </div>
         <div className="w-[3rem]"></div>

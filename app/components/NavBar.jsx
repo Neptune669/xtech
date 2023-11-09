@@ -1,9 +1,10 @@
 "use client";
 import Image from "next/image";
-import save from "../assets/save.svg";
 import search from "../assets/search.svg";
+import { FiTriangle } from "react-icons/fi";
 import Link from "next/link";
 import NewMenu from "./newMenu";
+import Button from "./Button";
 const NavBar = () => {
   return (
     <header className="sticky top-0 z-50 px-8 mx-auto bg-white ">
@@ -29,9 +30,10 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="hidden lg:flex lg:items-center lg:gap-6">
-          <button className="flex items-center gap-2 px-3 py-2 text-sm font-extrabold bg-[#0C356A] text-white btn">
+          {/* <button className="flex items-center gap-2 px-3 py-2 text-sm font-extrabold bg-[#0C356A] text-white btn">
             <Image src={save} alt="Search" width={20} height={20} /> Clint Area
-          </button>
+          </button> */}
+          <Button targetText="Client area" icon={<FiTriangle />} />
           <button className="flex items-center gap-2 text-sm font-extrabold text-white ">
             <Image src={search} alt="Search" width={20} height={20} />
           </button>

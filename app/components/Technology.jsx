@@ -2,6 +2,7 @@
 import Counting from "./NumberCounter";
 import Image from "next/image";
 import SectionHeader from "./SectionHeader";
+import DottedButton from "./DottedButton";
 
 const Technology = ({ title, titleTwo, ImgSrc }) => {
   return (
@@ -41,9 +42,9 @@ const Technology = ({ title, titleTwo, ImgSrc }) => {
             </li>
           </ul>
         </div>
-        <button className="btn bg-[#210D94] w-fit text-white py-4 px-5 ">
-          find out more
-        </button>
+        <div className=" w-fit">
+          <DottedButton buttonText={"Find out more"} />
+        </div>
       </div>
       <figure data-aos="fade-left">
         <Image src={ImgSrc} width={700} height={700} alt="Technology" />
