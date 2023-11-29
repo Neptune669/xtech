@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-progress": "^1.0.3",
     "aos": "^2.3.4",
     "framer-motion": "^10.16.4",
     "next": "14.0.1",
