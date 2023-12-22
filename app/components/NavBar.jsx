@@ -7,7 +7,7 @@ import NewMenu from "./newMenu";
 import Button from "./Button";
 const NavBar = () => {
   return (
-    <header className="sticky top-0 z-50 px-8 mx-auto bg-white ">
+    <header className="sticky top-0 z-50 px-8 mx-auto bg-white shadow-md ">
       <nav className="flex items-center justify-between py-4 ">
         <div className="flex items-center gap-20">
           <figure className="flex items-center">
